@@ -1,0 +1,39 @@
+
+package ui;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class MainFrame extends JFrame {
+
+	public MainFrame() {
+		setTitle("Sistema IML");
+		setSize(800,600);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		
+		criarInterface();
+		
+		setVisible(true);
+	}
+	
+	private void criarInterface() {
+		
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(3,1,10,10));
+		
+		JButton btnRegistrar = new JButton("Registrar corpo");
+		btnRegistrar.addActionListener(e -> {
+			new CadastroCorpoFrame();
+		});
+		
+		JButton btnCasos = new JButton("Ver casos");
+		JButton btnMedicos = new JButton("Médicos");
+		
+		panel.add(btnRegistrar);
+		panel.add(btnCasos);
+		panel.add(btnMedicos);
+		
+		add(panel, BorderLayout.CENTER);
+	}
+}	

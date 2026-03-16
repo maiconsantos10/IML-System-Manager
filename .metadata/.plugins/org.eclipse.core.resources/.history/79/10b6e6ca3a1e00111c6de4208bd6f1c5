@@ -1,0 +1,33 @@
+package ui;
+import javax.swing.*;
+import java.awt.*;
+
+
+public class CadastroCorpoFrame extends JFrame {
+
+	public CadastroCorpoFrame() {
+		setTitle("Registrar corpo");
+		setSize(400,300);
+		setLocationRelativeTo(null);
+		
+		JPanel panel = new JPanel(new GridLayout(4,2));
+		
+		panel.add(new JLabel("Nome: "));
+		JTextField campoNome = new JTextField();
+		panel.add(campoNome);
+		
+		panel.add(new JLabel("Causa da morte: "));
+		JTextField campoCausa = new JTextField();
+		panel.add(campoCausa);	
+		
+		JButton btnSalvar = new JButton("Salvar");
+		
+		panel.add(btnSalvar);
+		
+		add(panel);
+		
+		setVisible(true);
+		
+		
+		}
+}

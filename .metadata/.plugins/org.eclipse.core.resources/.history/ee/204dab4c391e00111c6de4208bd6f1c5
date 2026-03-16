@@ -1,0 +1,9 @@
+package entities;
+
+public class Corpo {
+	
+	private int id;
+	private String nome;
+	private String causaDaMorte;
+	private String status;
+}

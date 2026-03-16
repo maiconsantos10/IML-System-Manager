@@ -1,0 +1,12 @@
+package ui;
+import javax.swing.*;
+import java.awt.*;
+
+
+public class CadastroCorpoFrame {
+
+		public CadastroCorpoFrame() {
+			setTitle("Registrar corpo");
+			setSize(400, 300);
+		}
+}

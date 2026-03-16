@@ -1,0 +1,16 @@
+
+package ui;
+
+import javax.swing.JFrame;
+
+public class MainFrame {
+
+	public MainFrame extends JFrame() {
+		setTitle("Sistema IML");
+		setSize(800,600);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		
+		setVisible(true);
+	}
+}	

@@ -1,0 +1,18 @@
+package service;
+
+import entities.Caso;
+import java.util.List;
+import java.util.ArrayList;
+
+public class CasoService {
+
+	private List<Caso> casos = new ArrayList<>();
+	
+	public void adicionarCasos(Caso caso) {
+		casos.add(caso);
+	}
+	
+	public List<Caso> listarCasos() {
+		return casos;
+	}
+}

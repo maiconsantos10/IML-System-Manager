@@ -1,0 +1,35 @@
+package entities;
+
+public class Caso {
+	
+	private int id;
+	private int numeroCaso;
+	private Corpo corpo;
+	private String medicoResponsavel;
+	private String status;
+	
+	public Caso(int id, int numeroCaso, Corpo corpo) {
+		this.numeroCaso = numeroCaso;
+		this.corpo = corpo;
+		this.status = "ABERTO";
+		this.id = id;
+	}
+	
+	public int getId() {
+        return id;
+    }
+
+    public String getNumeroCaso() {
+        return numeroCaso;
+    }
+
+    public Corpo getCorpo() {
+        return corpo;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+	
+}
