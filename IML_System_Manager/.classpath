@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/maico/Documents/IML System Manager/IML_System_Manager/lib/h2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

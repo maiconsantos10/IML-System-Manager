@@ -1,3 +1,2 @@
-2026/03/12-14:05:43.202 31e0 Reusing MANIFEST C:\Users\maico\Documents\IML System Manager\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2026/03/12-14:05:43.214 31e0 Recovering log #3
-2026/03/12-14:05:43.217 31e0 Reusing old log C:\Users\maico\Documents\IML System Manager\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+2026/03/16-10:54:38.837 1cc4 Creating DB C:\Users\maico\Documents\IML System Manager\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2026/03/16-10:54:38.891 1cc4 Reusing MANIFEST C:\Users\maico\Documents\IML System Manager\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
