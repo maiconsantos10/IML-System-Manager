@@ -1,8 +1,5 @@
 package repository;
 
-public class CasoRepository {
-package repository;
-
 import database.DatabaseConnection;
 import entities.Caso;
 
@@ -34,5 +31,4 @@ public class CasoRepository {
 
     }
 
-}
 }
