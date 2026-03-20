@@ -6,6 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/maico/Documents/IML System Manager/IML_System_Manager/lib/h2.jar"/>
+	<classpathentry kind="lib" path="lib/h2-2.4.240.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql-42.7.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

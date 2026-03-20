@@ -16,13 +16,24 @@ public class DatabaseConnection {
 
     public static Connection getConnection() {
         try {
-            // Explicitly load the PostgreSQL driver class (optional for modern JDBC, but helpful for clear errors).
-            Class.forName("org.postgresql.Driver");
+            loadDriver();
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (Exception e) {
             throw new IllegalStateException(
-                    "Unable to connect to the PostgreSQL database. Make sure the PostgreSQL driver JAR is on the classpath and the DB is running.",
+                    "Unable to connect to the database at " + URL
+                            + ". Make sure the correct JDBC driver JAR is on the classpath and the database is running.",
                     e);
+        }
+    }
+
+    private static void loadDriver() throws ClassNotFoundException {
+        if (URL.startsWith("jdbc:postgresql:")) {
+            Class.forName("org.postgresql.Driver");
+            return;
+        }
+
+        if (URL.startsWith("jdbc:h2:")) {
+            Class.forName("org.h2.Driver");
         }
     }
 
