@@ -1,6 +1,0 @@
-package utils;
-import java.time.Year;
-
-public class GeradorCaso {
-
-}
