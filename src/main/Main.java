@@ -10,12 +10,11 @@ public class Main {
 		
 		DatabaseInitializer.init();
 
-		Connection conn = DatabaseConnection.getConnection();
-
-		if (conn != null) {
+		try (Connection conn = DatabaseConnection.getConnection()) {
 			System.out.println("Database Connection Successfull!");
-		} else {
+		} catch (Exception e) {
 			System.out.println("Database Connection Failed!");
+			e.printStackTrace();
 			return;
 		}
 
