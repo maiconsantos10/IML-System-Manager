@@ -15,7 +15,7 @@ public class DatabaseInitializer {
 
             String sql = """
                     CREATE TABLE IF NOT EXISTS casos (
-                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        id SERIAL PRIMARY KEY,
                         numeroCaso VARCHAR(50),
                         nome VARCHAR(100),
                         causaMorte VARCHAR(100),
